@@ -4,7 +4,7 @@ function Car(make, model) {
 	this.model = model;
 	
 }
-Car.prototype.getMakeMode(){
+Car.prototype.getMakeMode=function(){
 	return `${this.make} ${this.model}`;
 }
 //sports car constructor
@@ -17,7 +17,7 @@ function SportsCar(make, model, topSpeed) extends Car {
 SportsCar.prototype = Object.create(Car.prototype);
 SportsCar.prototype.constructor = SportsCar;
 
-SportsCar.prototype.getTopSpeed(){
+SportsCar.prototype.getTopSpeed=function(){
 		return this.topSpeed;
 	}
 
