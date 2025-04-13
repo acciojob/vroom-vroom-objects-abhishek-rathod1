@@ -8,7 +8,7 @@ Car.prototype.getMakeMode=function(){
 	return `${this.make} ${this.model}`;
 }
 //sports car constructor
-function SportsCar(make, model, topSpeed) extends Car {
+function SportsCar(make, model, topSpeed){
 	Car.call(this,make, model);
 	this.topspeed = topSpeed;
 	
