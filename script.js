@@ -1,10 +1,10 @@
 // Complete the js code
-function Car(make, model) {	
+function Car(make,model) {	
 	this.make = make;
-	this.model = model;
-	
+	this.model = model;	
 }
-Car.prototype.getMakeMode=function(){
+
+Car.prototype.getMakeModel=function(){
 	return `${this.make} ${this.model}`;
 }
 //sports car constructor
